@@ -12,10 +12,13 @@
   font-style: normal;
 }
 
-/*html {
+html {
   font-family: OpenSans, Arial, sans-serif;
-}*/
+}
 
+a {
+  text-decoration: none;
+}
 
 .header {
   position: relative;
@@ -26,7 +29,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
 
+.header {
+  text-transform: uppercase;
 }
 
 .header::after {
@@ -38,10 +44,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.header {
-  text-transform: uppercase;
 }
 
 .container {
@@ -57,7 +59,9 @@
   margin: 0 auto;
 }
 
-.header-logo {
+.header-logo,
+.btn-download-logo,
+.btn-get-it-logo {
   fill: #ffffff;
 }
 
@@ -79,26 +83,7 @@
   text-align: right;
 }
 
-
-.link {
-  width: 673px;
-  height: 100;
-  background-color: aqua;
-  margin: 0 auto;
-  padding-top: 222px;
-  padding-bottom: 110px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  line-height: 14px;
-  color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-
-}
-
-
-
-.btn-top {
+.header-link {
   width: 673px;
   margin: 0 auto;
   padding-top: 222px;
@@ -139,11 +124,17 @@
   flex-wrap: wrap;
   align-content: center;
   padding-left: 26px;
+  line-height: 20px;
+  list-style: none;
+  color: #ffffff;
 }
 
 .btn-second-line {
   font-weight: 700;
 }
+
+
+
 
 body {
   font-family: OpenSans, Arial, sans-serif;
