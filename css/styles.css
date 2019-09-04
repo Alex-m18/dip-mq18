@@ -38,7 +38,9 @@ a {
 .footer,
 .download-app,
 .subtitle,
-.be-active-title {
+.be-active-title,
+.find-contact-title,
+.work-it-title {
   text-transform: uppercase;
 }
 
@@ -222,7 +224,9 @@ main {
 
 .athlets-title,
 .players-title,
-.be-active-title {
+.be-active-title,
+.find-contact-title,
+.work-it-title {
   margin: 0;
   font-size: 80px;
   color: #e7e7e7;
@@ -295,32 +299,58 @@ main {
   margin: 0;
 }
 
-.be-active {
-  width: 1560px;
+.be-active,
+.work-it,
+.find-contact {
+  width: 1920px;
+  height: 730px;
   margin: 0 auto;
   display: flex;
-
+  text-align: left;
 }
 
 .pic {
   width: 960px;
-  height: 730px;
+
 }
 
-.be-active-pic {
+.be-active-pic,
+.work-it-pic {
   position: relative;
   top: 0;
-  left: -50%;
-  margin-left: 300px;
   right: 0;
-  bottom: 0px;
+  left: -50%;
+  margin-left: 480px;
+  bottom: 0;
 }
 
-.be-active-content {
-  width: 670px;
+.find-contact div:nth-child(1) {
+  order: 1;
+}
+
+.find-contact-pic {
+  position: relative;
+  top: ;
+  right: 0;
+  left: 50%;
+  margin-left: -340px;
+  bottom: 0;
+}
+
+
+
+.be-active-content,
+.find-contact-content,
+.work-it-content {
+  width: 660px;
   position: relative;
   margin-top: 261px;
-
+  margin-left: 130px;
+  padding-right: 30px;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  left: 0;
 }
 
 
@@ -332,7 +362,19 @@ main {
   top: -20px;
   left: -50%;
   right: 0;
-  margin-left: 40px;
+  margin-left: 134px;
+  bottom: 0;
+}
+
+.find-contact-list {
+  width: 168px;
+  height: 155px;
+  position: absolute;
+  background-color: #5e42b0;
+  top: -20px;
+  left: 100%;
+  margin-left: 60px;
+  right: 0;
   bottom: 0;
 }
 
@@ -356,13 +398,25 @@ main {
 .list-item::after {
   position: absolute;
   content: "";
-  width: 21px;
+  width: 24px;
   height: 5px;
   border-radius: 2px;
   background-color: #ffffff;
   opacity: 0.3;
   top: 34px;
   left: 2px;
+}
+
+.be-active-text,
+.find-contact-text,
+.work-it-text {
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  color: #000000;
+  padding-top: 118px;
+  padding-right: 26px;
+  margin: 0;
 }
 
 
