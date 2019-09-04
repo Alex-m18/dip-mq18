@@ -25,7 +25,6 @@ a {
   color: #ffffff;
   background-color: #0a0e34;
   padding-top: 45px;
-  padding-bottom: 110px;
   background-image: url("../images/football_1920.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -33,11 +32,9 @@ a {
 }
 
 .header,
-.athlets-title,
-.players-title,
+.title,
 .footer,
-.download-app,
-.subtitle {
+.download-app {
   text-transform: uppercase;
 }
 
@@ -55,15 +52,14 @@ a {
 
 .container {
   z-index: 1;
-  width: 1560px;
+  width: 1557px;
   position: relative;
-  margin-left: auto;
+  margin: auto;
   margin-right: auto;
 }
 
 .header-logo,
 .footer-logo {
-  display: block;
   width: 191px;
   margin: 0 auto;
 }
@@ -77,11 +73,11 @@ a {
 
 .intro {
   display: block;
-  margin-top: 295px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding-top: 295px;
   font-size: 90px;
   font-weight: 700;
+  /*line-height: 35px;*/
   letter-spacing: 5px;
 }
 
@@ -92,7 +88,7 @@ a {
 
 .header-link,
 .footer-link {
-  width: 676px;
+  width: 673px;
   margin: 0 auto;
   font-size: 14px;
   letter-spacing: 1px;
@@ -103,9 +99,10 @@ a {
 }
 
 .header-link {
-  margin-top: 222px;
-
+  padding-top: 222px;
+  padding-bottom: 110px;
 }
+
 
 .btn-download,
 .btn-get-it {
@@ -115,32 +112,34 @@ a {
   background-color: #5e42b0;
   display: flex;
   cursor: pointer;
+}
+
+.btn-download-logo {
+  width: 42px;
+  padding-left: 38px;
   margin: auto 0;
 }
 
-.btn-download-logo,
 .btn-get-it-logo {
   width: 42px;
-  padding-left: 38px;
+  padding-left: 56px;
+  margin: auto 0;
 }
-
 
 .btn-name {
   width: 160px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  margin-left: 26px;
+  padding-left: 26px;
   line-height: 20px;
   list-style: none;
   color: #ffffff;
-  padding: 0;
 }
 
 .btn-second-line {
   font-weight: 700;
 }
-
 /* --- начало main --- */
 
 main {
@@ -148,152 +147,42 @@ main {
   margin: 0;
 }
 
-.athlets,
-.players {
-  margin: 116px auto 0;
-  position: relative;
-}
-
-.athlets::after {
-  content: "";
-  background-image: url("../images/footballer_566.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: -80px;
-  left: 50%;
-  margin-left: -600px;
-  right: 0;
-  bottom: -50px;
-  z-index: 3
-}
-
-.players::after {
-  content: "";
-  background-image: url("../images/basketballer_991.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: -80px;
-  left: 50%;
-  margin-left: -160px;
-  right: 0;
-  bottom: 5px;
-  z-index: 3
-}
-
-.athlets-connection,
-.athlets-collaboration,
-.athlets-growth,
-.athlets-title {
-  padding-right: 15px;
-  background-color: #ffffff;
-}
-
-.athlets-content,
-.players-content {
-  width: 760px;
-  padding-left: 50px;
-  position: relative;
-  left: 50%;
-}
-
-.players-content {
-  margin-left: -820px;
+.footballer {
+  
 }
 
 
-.athlets-collaboration,
-.players-collaboration {
-  background-color: rgba(94, 66, 176, 0.06);
-}
 
-.athlets-growth {
-  background-color: rgba(94, 66, 176, 1);
-  color: #ffffff;
-}
-
-.players-growth {
-  background-color: #0a0e34;
-  color: #ffffff;
-}
-
-#0a0e34;
-
-
-.athlets-title,
-.players-title {
-  margin: 0;
+.title {
+  text-align: left;
   font-size: 80px;
   color: #e7e7e7;
-  text-align: left;
 }
 
-.items {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  padding-top: 60px;
-  margin: 0;
-}
 
-.item {
-  font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 34px;
-  color: #000000;
-  font-weight: 700;
-  text-align: center;
-}
 
-.item::after {
-  position: absolute;
-  content: "";
-  width: 21px;
-  height: 5px;
-  border-radius: 2px;
-  background-color: #5e42b0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
 
-.item-growth::after {
-  position: absolute;
-  content: "";
-  width: 21px;
-  height: 5px;
-  border-radius: 2px;
-  background-color: #efefef;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
 
-.subtitle {
-  font-size: 36px;
-  letter-spacing: 2px;
-  line-height: 34px;
-  color: #c1c1c1;
-  font-weight: 700;
-  padding-left: 11px;
-  margin: 0;
-}
 
-.text {
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: #000000;
-  padding: 31px 0 55px;
-  margin: 0;
-}
 
-.text-growth {
-  font-size: 20px;
-  letter-spacing: 1px;
-  padding: 31px 0 55px;
-  margin: 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -307,8 +196,7 @@ main {
   position: relative;
   color: #ffffff;
   background-color: #0a0e34;
-  padding-top: 229px;
-  padding-bottom: 52px;
+  padding-top: 45px;
   background-image: url("../images/game_1920.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -321,16 +209,12 @@ main {
   display: flex;
   align-items: center;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 151px;
+  margin: 229px auto 151px;
   background: transparent;
   border: 0;
   cursor: pointer;
 }
 
-.header-logo:hover,
-.footer-logo:hover,
 .download-app:hover,
 .btn-download:hover,
 .btn-get-it:hover {
@@ -351,7 +235,7 @@ main {
   width: 736px;
   margin: 0;
   color: #ffffff;
-  margin-left: 26px;
+  padding-left: 26px;
   text-align: left;
   list-style: none;
   font-size: 80px;
@@ -369,6 +253,10 @@ main {
 }
 
 .footer-link {
-  margin-bottom: 262px;
+  padding-bottom: 262px;
 }
 
+
+.footer-logo {
+  padding-bottom: 52px;
+}
