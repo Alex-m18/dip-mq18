@@ -330,7 +330,7 @@ main {
 
 .find-contact-pic {
   position: relative;
-  top: ;
+  top: 0;
   right: 0;
   left: 50%;
   margin-left: -340px;
