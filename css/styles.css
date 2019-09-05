@@ -16,9 +16,17 @@ html {
   font-family: "OpenSans", "Arial", sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
 a {
   text-decoration: none;
 }
+
+
 
 .header {
   position: relative;
@@ -148,12 +156,14 @@ a {
 
 main {
   font-family: OpenSans, Arial, sans-serif;
-  margin: 0;
+  /* margin: 0;*/
 }
 
 .athlets,
 .players {
-  margin: 116px auto 0;
+  padding-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
 }
 
@@ -163,7 +173,7 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: -80px;
+  top: 27px;
   left: 50%;
   margin-left: -600px;
   right: 0;
@@ -178,11 +188,11 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: -110px;
+  top: 23px;
   left: 50%;
   margin-left: -160px;
   right: 0;
-  bottom: 50px;
+  bottom: 36px;
   z-index: 3
 }
 
@@ -197,7 +207,7 @@ main {
 .athlets-content,
 .players-content {
   width: 760px;
-  padding-left: 50px;
+  padding: 60px 0 55px 50px;
   position: relative;
   left: 50%;
 }
@@ -237,7 +247,6 @@ main {
   display: flex;
   align-items: flex-start;
   position: relative;
-  padding-top: 60px;
   margin: 0;
 }
 
@@ -288,7 +297,7 @@ main {
   font-size: 20px;
   letter-spacing: 1px;
   color: #000000;
-  padding: 31px 0 55px;
+  padding-top: 31px;
   margin: 0;
 }
 
