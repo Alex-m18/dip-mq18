@@ -911,9 +911,7 @@ main {
   }
 
   .logo:hover,
-  .-logo:hover,
   .download-app:hover,
-  .btn-download:hover,
   .btn-get-it:hover {
     -moz-box-shadow: inset 0 0 10px #ffffff;
     -webkit-box-shadow: inset 0 0 10px #ffffff;
