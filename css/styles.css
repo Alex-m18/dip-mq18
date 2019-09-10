@@ -29,6 +29,7 @@ html {
 
 body {
   min-width: 320px;
+
 }
 
 h1,
@@ -48,6 +49,7 @@ h3,
   text-transform: uppercase;
   font-weight: 700;
 }
+
 
 .header {
   position: relative;
@@ -89,27 +91,24 @@ h3,
   margin: 0 auto;
 }
 
-/*  эффект при наведении в mobile?
-.logo:hover,
-.download-app:hover {
-  -moz-box-shadow: inset 0 0 10px #ffffff;
-  -webkit-box-shadow: inset 0 0 10px #ffffff;
-  box-shadow: inset 0 0 10px #ffffff;
-  text-shadow: 3px 3px 4px #000000;
-  cursor: pointer;
-}
-*/
-
 .btn-svg,
 .logo-svg {
   fill: #ffffff;
 }
 
+.header-intro {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 280px;
+}
+
 .intro {
+
   display: flex;
   flex-direction: column;
-  margin: 137px auto 0;
-  font-size: 28px;
+  justify-content: center;
+  margin-top: 137px;
+  font-size: 2.8rem;
   letter-spacing: 1px;
   line-height: 31px;
   padding-left: 0;
@@ -125,7 +124,6 @@ h3,
 .header-link,
 .footer-link {
   width: 280px;
-  height: 35px;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 1px;
@@ -144,7 +142,7 @@ h3,
   width: 280px;
   height: 35px;
   display: flex;
-  font-size: 8px;
+  font-size: 0.8rem;
   border-radius: 17px;
   background-color: #5e42b0;
   margin: 0 auto;
@@ -162,7 +160,7 @@ h3,
 
 .btn-name {
   width: 100px;
-  font-size: 8px;
+  font-size: 0.8rem;
   font-weight: 400;
   display: flex;
   flex-wrap: wrap;
@@ -191,6 +189,7 @@ main {
 .athlets-content,
 .players-content {
   position: relative;
+  padding-bottom: 54px;
 }
 
 .athlets-title,
@@ -199,7 +198,7 @@ main {
   font-size: 50px;
   color: #e7e7e7;
   text-align: left;
-  padding: 0 20px 226px;
+  padding: 0 20px 172px;
 }
 
 .athlets::after {
@@ -212,7 +211,7 @@ main {
   position: absolute;
   top: 80px;
   right: 0;
-  bottom: 0;
+  bottom: -50px;
   left: 50%;
   margin-left: -95px;
   z-index: 2;
@@ -249,17 +248,16 @@ main {
   color: #ffffff;
 }
 
-
 .items {
   display: flex;
   align-items: flex-start;
   position: relative;
-  margin: 0;
+
 }
 
 .item,
 .item-growth {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 28px;
@@ -295,22 +293,20 @@ main {
 }
 
 .subtitle {
-  font-size: 23px;
+  font-size: 2.3rem;
   letter-spacing: 1px;
   line-height: 34px;
   color: #c1c1c1;
-
-  padding-left: 11px;
-  margin: 0;
+  margin-left: 11px;
 }
 
 .text,
 .text-growth {
-  font-size: 15px;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   line-height: 18px;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  margin-top: 27px;
+
 }
 
 .text-growth {
@@ -335,6 +331,7 @@ main {
 
 /* начало be-active*/
 
+
 .be-active-content,
 .find-contact-content,
 .work-it-content {
@@ -352,17 +349,17 @@ main {
 .be-active-title,
 .find-contact-title,
 .work-it-title {
-  font-size: 28px;
+  font-size: 2.8rem;
   letter-spacing: 1px;
   line-height: 34px;
   color: #e7e7e7;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .be-active-text,
 .find-contact-text,
 .work-it-text {
-  font-size: 16px;
+  font-size: 1.6rem;
   letter-spacing: 1px;
   line-height: 20px;
 }
@@ -371,6 +368,7 @@ main {
 .find-contact-list {
   width: 70px;
   height: 70px;
+  display: flex;
   position: absolute;
   background-color: #5e42b0;
   top: -58px;
@@ -381,17 +379,9 @@ main {
 }
 
 .list-item {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 0;
-  bottom: 50%;
-  margin-left: -8px;
-  margin-top: 13px;
-
-  font-size: 14px;
+  margin: auto;
+  font-size: 1.4rem;
   letter-spacing: 1px;
-  line-height: 34px;
   color: #f5f6f7;
   font-weight: 700;
 }
@@ -404,13 +394,13 @@ main {
   border-radius: 1px;
   background-color: #ffffff;
   opacity: 0.3;
-  top: 28px;
-  left: 1px;
+  top: 45px;
+  left: auto;
+  margin-left: -17px;
 }
 
-
-
 /* --- начало footer --- */
+
 
 .footer {
   position: relative;
@@ -424,70 +414,424 @@ main {
   background-size: cover;
 }
 
-.download-app {
-  width: 280px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 75px;
-  background: transparent;
-  border: 0;
-}
 
 .btn-logo {
+  display: block;
   width: 72px;
   border-radius: 20%;
   background: linear-gradient(#5e3db3, #50329c);
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .download-text {
-  margin: 0;
-  padding-top: 60px;
-  padding-bottom: 75px;
-  font-size: 32px;
-  letter-spacing: 1px;
-  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 60px auto 75px;
+  font-size: 3.2rem;
 }
 
 .text-second-line {
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 1.4rem;
   color: #9b8ec1;
   font-weight: 400;
-  display: block;
-
 }
 
 .footer-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 130px;
 }
 
+/*
+
+@media (min-width: 641px) and (max-width: 960px) {
 
 
+  .header {
+    padding-top: 37px;
+    padding-bottom: 90px;
+    background-image: url("../images/football_1280.jpg");
+  }
+
+  .container {
+    width: 97.66%;
+    /*  750/768*100 */
+  }
+/*
+  .logo {
+    display: block;
+    width: 205px;
+  }
+
+  .intro {
+    width: 600px;
+    margin: 181px auto 0;
+    font-size: 6.4rem;
+    line-height: 62px;
+    letter-spacing: 3.52px;
+    padding-left: 80px;
+  }
+
+  .intro-second-line {
+    display: block;
+    align-self: flex-start;
+    padding-left: 105px;
+    letter-spacing: 4px;
+  }
+
+  .header-link,
+  .footer-link {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .header-link {
+    margin-top: 312px;
+  }
+
+  .btn-download,
+  .btn-get-it {
+    width: 308px;
+    height: 77px;
+    border-radius: 38px;
+    background-color: #5e42b0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    letter-spacing: 0.7px;
+    margin: 0;
+  }
+
+  .btn-download {
+    margin-bottom: 14px;
+  }
+
+  .btn-svg {
+    width: 41px;
+
+    margin-left: 50px;
+  }
+
+  .btn-name {
+    width: 152px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    margin-left: 26px;
+  }
+
+  .btn-second-line {
+    display: block;
+    font-weight: 700;
+  }
+
+  /* --- начало main --- */ /*
+
+  main {
+    margin: 0;
+  }
+
+  .athlets,
+  .players {
+    padding-top: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .athlets-content,
+  .players-content {
+    /*  position: relative;*/
+  }
+/*
+  .athlets-title,
+  .players-title {
+    font-size: 8rem;
+    line-height: 60px;
+    color: #e7e7e7;
+    text-align: left;
+  }
+
+  .athlets-title {
+    padding-left: 291px;
+  }
+
+  .athlets::after {
+    width: 64.7vw;
+    height: auto;
+    content: "";
+    background-image: url("../images/footballer_497.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 94px;
+    right: 50%;
+    bottom: 20px;
+    left: 0;
+    margin-left: auto;
+    z-index: 2;
+  }
+
+  .athlets-connection,
+  .athlets-collaboration,
+  .athlets-growth,
+  .players-connection,
+  .players-collaboration,
+  .players-growth {
+    padding-top: 42px;
+  }
+
+  .athlets-connection,
+  .athlets-collaboration,
+  .athlets-growth {
+    padding-left: 230px;
+  }
+
+  .players-title {
+    padding-left: 24px;
+  }
+
+  .players-connection,
+  .players-collaboration,
+  .players-growth {
+    padding-left: 25px;
+  }
+
+  .athlets-collaboration,
+  .players-collaboration {
+    background-color: rgba(94, 66, 176, 0.06);
+  }
+
+  .athlets-growth {
+    background-color: rgba(94, 66, 176, 1);
+    color: #ffffff;
+  }
+
+  .players-growth {
+    background-color: #090c35;
+    color: #ffffff;
+  }
 
 
+  .items {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin: 0;
+  }
 
+  .item,
+  .item-growth {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 34px;
+  }
 
+  .athlets .item-growth {
+    color: #000000;
+  }
 
+  .players .item-growth {
+    color: #8765dd;
+  }
 
+  .item::after,
+  .item-growth::after {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 5px;
+    border-radius: 2px;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
+  .item::after {
+    background-color: #5e42b0;
+  }
 
-@media (min-width: 641px) and (max-width: 960px) {}
+  .item-growth::after {
+    background-color: #efefef;
+  }
 
+  .subtitle {
+    font-size: 3.2rem;
+    letter-spacing: 1.6px;
+    color: #c1c1c1;
+    padding-left: 11px;
+    margin: 0;
+  }
 
+  .text,
+  .text-growth {
+    width: 390px;
 
+    font-size: 1.6rem;
+    letter-spacing: 0.8px;
+    margin-top: 32px;
+    padding-bottom: 36px;
+  }
 
+  .text-growth {
+    color: #ffffff;
+  }
 
+  .players::after {
+    width: auto;
+    height: auto;
+    content: "";
+    background-image: url("../images/basketballer_436.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    margin-right: auto;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
 
+  /* начало be-active*/
 
+/*
+  .be-active-content,
+  .find-contact-content,
+  .work-it-content {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 90px 32px 97px;
+  }
 
+  .be-active-title,
+  .find-contact-title,
+  .work-it-title {
+    font-size: 8rem;
+    letter-spacing: 1px;
+    line-height: 60px;
+    color: #e7e7e7;
+    padding-bottom: 37px;
+  }
+
+  .be-active-text,
+  .find-contact-text,
+  .work-it-text {
+    /* width: 662px;*/    /*
+    font-size: 2.4rem;
+    letter-spacing: 1.2px;
+    line-height: 28px;
+  }
+
+  .list,
+  .find-contact-list {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: #5e42b0;
+    top: -58px;
+    left: 20px;
+    right: 0;
+    margin-left: 0;
+    bottom: 0;
+  }
+
+  .list-item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 50%;
+    margin-left: -8px;
+    margin-top: 13px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 34px;
+    color: #f5f6f7;
+    font-weight: 700;
+  }
+
+  .list-item::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    opacity: 0.3;
+    top: 28px;
+    left: 1px;
+  }
+
+  /* --- начало footer --- */
+/*
+
+  .footer {
+    position: relative;
+    color: #ffffff;
+    background-color: #0a0e34;
+    padding-top: 126px;
+    padding-bottom: 24px;
+    background-image: url("../images/game_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+/*
+  .download-app {
+    /* width: 703px;*/    /*
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 287px;
+    background: transparent;
+    border: 0;
+  }
+
+  .btn-logo {
+    width: 130px;
+    border-radius: 20%;
+    background: linear-gradient(#5e3db3, #50329c);
+  }
+
+  .download-text {
+    margin: 0;
+    padding-top: 82px;
+    font-size: 8rem;
+    letter-spacing: 3.2px;
+    color: #ffffff;
+  }
+
+  .text-second-line {
+    color: #a496ca;
+    font-size: 3.6rem;
+    font-weight: 400;
+    display: block;
+    letter-spacing: 0.1px;
+  }
+
+  .footer-link {
+    align-items: center;
+    margin-bottom: 130px;
+  }
+
+}
+
+/*
 @media (min-width: 961px) {
 
   .header {
@@ -501,8 +845,6 @@ main {
     background-position: center center;
     background-size: cover;
   }
-
-
 
   .header::after,
   .footer::after {
@@ -540,9 +882,9 @@ main {
     margin-top: 295px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 90px;
+    font-size: 9rem;
     font-weight: 700;
-    letter-spacing: 5px;
+    letter-spacing: 4.96px;
   }
 
   .intro-second-line {
@@ -552,9 +894,9 @@ main {
 
   .header-link,
   .footer-link {
-    width: 676px;
+    width: 672px;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 1.4rem;
     letter-spacing: 1px;
     line-height: 14px;
     color: #ffffff;
@@ -564,7 +906,6 @@ main {
 
   .header-link {
     margin-top: 222px;
-
   }
 
   .btn-download,
@@ -589,7 +930,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    margin-left: 26px;
+    margin-left: 28px;
     line-height: 20px;
     list-style: none;
     color: #ffffff;
@@ -604,7 +945,6 @@ main {
 
   main {
     font-family: OpenSans, Arial, sans-serif;
-
   }
 
   .athlets,
@@ -616,6 +956,8 @@ main {
   }
 
   .athlets::after {
+    width: 566px;
+    height: 908px;
     content: "";
     background-image: url("../images/footballer_566.png");
     background-repeat: no-repeat;
@@ -664,7 +1006,6 @@ main {
     margin-left: -820px;
   }
 
-
   .athlets-collaboration,
   .players-collaboration {
     background-color: rgba(94, 66, 176, 0.06);
@@ -686,7 +1027,7 @@ main {
   .find-contact-title,
   .work-it-title {
     margin: 0;
-    font-size: 80px;
+    font-size: 8rem;
     color: #e7e7e7;
     text-align: left;
   }
@@ -699,7 +1040,7 @@ main {
   }
 
   .item {
-    font-size: 18px;
+    font-size: 1.8rem;
     letter-spacing: 1px;
     line-height: 34px;
     color: #000000;
@@ -732,7 +1073,7 @@ main {
   }
 
   .subtitle {
-    font-size: 36px;
+    font-size: 3.6rem;
     letter-spacing: 2px;
     line-height: 34px;
     color: #c1c1c1;
@@ -742,7 +1083,7 @@ main {
   }
 
   .text {
-    font-size: 20px;
+    font-size: 2rem;
     letter-spacing: 1px;
     color: #000000;
     padding-top: 31px;
@@ -750,7 +1091,7 @@ main {
   }
 
   .text-growth {
-    font-size: 20px;
+    font-size: 2rem;
     letter-spacing: 1px;
     padding: 31px 0 55px;
     margin: 0;
@@ -768,7 +1109,6 @@ main {
 
   .pic {
     width: 960px;
-
   }
 
   .be-active-pic,
@@ -794,8 +1134,6 @@ main {
     bottom: 0;
   }
 
-
-
   .be-active-content,
   .find-contact-content,
   .work-it-content {
@@ -809,7 +1147,6 @@ main {
     bottom: 0;
     left: 0;
   }
-
 
   .list {
     width: 168px;
@@ -836,9 +1173,8 @@ main {
   }
 
   .list-item {
-
     position: absolute;
-    font-size: 24px;
+    font-size: 2.4rem;
     letter-spacing: 1px;
     line-height: 34px;
     color: #ffffff;
@@ -849,7 +1185,6 @@ main {
     bottom: 0;
     margin-left: -18px;
     margin-top: -18px;
-
   }
 
   .list-item::after {
@@ -867,7 +1202,7 @@ main {
   .be-active-text,
   .find-contact-text,
   .work-it-text {
-    font-size: 24px;
+    font-size: 2.4rem;
     letter-spacing: 1px;
     line-height: 28px;
     color: #000000;
@@ -875,14 +1210,6 @@ main {
     padding-right: 26px;
     margin: 0;
   }
-
-
-
-
-
-
-
-
 
   .footer {
     position: relative;
@@ -910,14 +1237,14 @@ main {
     cursor: pointer;
   }
 
+  .logo-svg:hover,
   .logo:hover,
-  .download-app:hover,
+  .btn-download:hover,
   .btn-get-it:hover {
     -moz-box-shadow: inset 0 0 10px #ffffff;
     -webkit-box-shadow: inset 0 0 10px #ffffff;
     box-shadow: inset 0 0 10px #ffffff;
     text-shadow: 3px 3px 4px #000000;
-
   }
 
   .btn-logo {
@@ -933,20 +1260,20 @@ main {
     margin-left: 26px;
     text-align: left;
     list-style: none;
-    font-size: 80px;
+    font-size: 8rem;
     letter-spacing: 4px;
     font-weight: 700;
   }
 
   .text-second-line {
     display: block;
-    font-size: 30px;
+    font-size: 3rem;
     letter-spacing: 0;
     font-weight: 400;
     color: #a496ca;
-
   }
 
   .footer-link {
     margin-bottom: 262px;
   }
+}
