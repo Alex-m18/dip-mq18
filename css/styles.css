@@ -575,16 +575,9 @@ main {
   .players-collaboration,
   .players-growth {
     text-align: left;
-  }
-
-  .players-title {
+    padding-right: calc(50% - 85px);
     padding-left: 20px;
   }
-
-  .players-content {
-    padding-right: calc(50% - 85px);
-  }
-
 
   .subtitle {
     font-size: 3.2rem;
@@ -868,15 +861,15 @@ main {
   .players-connection,
   .players-collaboration,
   .players-growth {
-    /*    padding-left: calc(27.112vw - 21.85277rem);*/
     padding-left: calc(50% - (780px - 0.6vw));
-    /*    margin-left: 15px;*/
+    
   }
 
   .players .items,
   .players .text,
   .players .text-growth {
-    max-width: 46%;
+
+    max-width: 46vw;
   }
 
   .players::after {
@@ -911,7 +904,7 @@ main {
     flex-direction: row-reverse;
   }
 
-    
+
   .be-active-pic,
   .find-contact-pic,
   .work-it-pic {
@@ -922,7 +915,7 @@ main {
     bottom: 0;
     left: 0;
   }
-  
+
   .find-contact-pic {
     left: calc(-50%+960px);
   }
@@ -974,13 +967,13 @@ main {
     left: 872px;
   }
 
-  
+
   .list-item {
     font-size: 2.4rem;
     letter-spacing: 1.2px;
   }
-  
- .list-item::after {
+
+  .list-item::after {
     width: 28px;
     height: 5px;
     border-radius: 2px;
