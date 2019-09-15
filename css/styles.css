@@ -150,7 +150,7 @@ h3,
 
 .btn-svg {
   width: 22px;
-  padding: 6px 0;
+  padding: auto 0;
   margin-left: 80px;
 }
 
@@ -369,7 +369,13 @@ main {
 }
 
 .list-item {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  right: 40%;
   margin: auto;
+  width: 100%;
+  /* IE11 fix */
   font-size: 1.4rem;
   letter-spacing: 1px;
   color: #f5f6f7;
@@ -379,14 +385,18 @@ main {
 .list-item::after {
   position: absolute;
   content: "";
-  width: 15px;
+  width: 28px;
   height: 4px;
   border-radius: 1px;
   background-color: #ffffff;
   opacity: 0.3;
-  top: 45px;
-  left: auto;
-  margin-left: -17px;
+  top: 100%;
+  left: 28%;
+  right: 28%;
+  margin: auto;
+  width: 25%;
+  /* IE11 fix */
+  margin-left: -20px;
 }
 
 /* --- start footer --- */
@@ -662,6 +672,9 @@ main {
   }
 
   .list-item {
+    position: absolute;
+    top: 30%;
+    /* IE11 fix */
     font-size: 2.4rem;
     letter-spacing: 1.2px;
   }
@@ -670,8 +683,8 @@ main {
     width: 28px;
     height: 5px;
     border-radius: 2px;
-    top: 75px;
-    margin-left: -30px;
+    left: 17%;
+    /* IE11 fix */
   }
 
   /* --- start footer --- */
@@ -861,7 +874,7 @@ main {
   .players-connection,
   .players-collaboration,
   .players-growth {
-   padding-left: 15px;
+    padding-left: 15px;
   }
 
   .players .items,
@@ -956,6 +969,10 @@ main {
     width: 168px;
     height: 155px;
     top: 211px;
+    
+    
+    
+    
   }
 
   .list {
@@ -970,25 +987,16 @@ main {
   .list-item {
     font-size: 2.4rem;
     letter-spacing: 1.2px;
+    top: 35%;
+    /* IE11 fix */
   }
 
   .list-item::after {
     width: 28px;
     height: 5px;
-    border-radius: 2px;
-    top: 98px;
-    margin-left: -30px;
+    left: 12%;
+    /* IE11 fix */
   }
-
-
-
-
-
-
-
-
-
-
 
 
   /* --- start footer --- */
