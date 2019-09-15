@@ -861,19 +861,18 @@ main {
   .players-connection,
   .players-collaboration,
   .players-growth {
-    padding-left: calc(50% - (780px - 0.6vw));
-    
+   padding-left: 15px;
   }
 
   .players .items,
   .players .text,
   .players .text-growth {
-
     max-width: 46vw;
   }
 
   .players::after {
-    width: 991px;
+    width: calc(50vw + 150px);
+    max-width: 991px;
     height: auto;
     content: "";
     background-image: url("../images/basketballer_991.png");
