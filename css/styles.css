@@ -622,7 +622,9 @@ main {
   }
 
   .players::after {
-    width: 436px;
+    width: calc(50vw + 50px);
+    max-width: 436px;
+    
     height: auto;
     content: "";
     background-image: url("../images/basketballer_436.png");
@@ -904,12 +906,13 @@ main {
   .be-active,
   .find-contact,
   .work-it {
-    max-width: 1920;
+    max-width: 1920px;
     margin: 0 auto;
     display: flex;
     text-align: left;
     position: relative;
     padding: 0;
+    overflow: hidden;
   }
 
   .find-contact {
@@ -921,19 +924,28 @@ main {
   .find-contact-pic,
   .work-it-pic {
     width: 960px;
-    position: relative;
+    position: absolute;
+  }
+  
+  .be-active-pic,
+  .work-it-pic {
     top: 0;
+    right: 50%;
+    bottom: 0;
+    left: inherit;
+    margin-right: -240px;
+  }
+    
+    .find-contact-pic {
+      top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-  }
-
-  .find-contact-pic {
-    left: calc(-50%+960px);
-  }
-
+    left: 50%;
+      margin-left: -240px;
+    }
+ 
   .be-active-content,
-  ..find-contact-content,
+  .find-contact-content,
   .work-it-content {
     width: 642px;
     text-align: left;
