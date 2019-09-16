@@ -909,7 +909,6 @@ main {
   .be-active,
   .find-contact,
   .work-it {
-    max-width: 1920px;
     margin: 0 auto;
     display: flex;
     text-align: left;
@@ -922,28 +921,23 @@ main {
     flex-direction: row-reverse;
   }
 
-
   .be-active-pic,
   .find-contact-pic,
   .work-it-pic {
     width: 960px;
     height: 730px;
     position: absolute;
+    top: 0;
+    bottom: 0;
   }
 
   .be-active-pic,
   .work-it-pic {
-    top: 0;
     right: 50%;
-    bottom: 0;
-    left: inherit;
     margin-right: -240px;
   }
 
   .find-contact-pic {
-    top: 0;
-    right: 0;
-    bottom: 0;
     left: 50%;
     margin-left: -240px;
   }
@@ -951,19 +945,34 @@ main {
   .be-active-content,
   .find-contact-content,
   .work-it-content {
+    height: 370px;
+    margin: 0;
+    padding: 0;
     width: 642px;
     text-align: left;
     position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 260px;
+    margin-bottom: 100px;
+    
   }
 
   .be-active-content,
   .work-it-content {
-    height: 730px;
-    margin: 260px 15px 0 130px;
+    left: 50%;
+    margin-right: 15px;
+    margin-left: 126px;
   }
 
   .find-contact-content {
-    margin: 260px 130px 0 15px;
+   
+    left: calc(50% - 100vw);
+    margin-right: 126px;
+    margin-left: 15px;
+   
+   
   }
 
   .be-active-title,
@@ -972,13 +981,21 @@ main {
     font-size: 8rem;
     line-height: 60px;
     margin-bottom: 90px;
-    position: absolute;
+    position: relative;
+    text-align: left;
   }
 
+/*
   .be-active-title,
-  .work-it-title {}
+  .work-it-title {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+*/
 
-  .find-contact-title {}
+/*  .find-contact-title {}*/
 
 
   .be-active-text,
@@ -995,22 +1012,20 @@ main {
     height: 155px;
     top: 211px;
     position: absolute;
-/*
     top: 0;
     right: 0;
     bottom: 0;
-*/
-    left: 50%;
+/*    left: 50%;*/
   }
   
   
 
   .list {
-    left: -88px;
+    left: -214px;
   }
 
   .find-contact-list {
-    left: 872px;
+    left: 684px;
   }
 
 
