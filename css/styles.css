@@ -811,6 +811,10 @@ main {
     padding: 0;
     position: relative;
   }
+  
+  .players {
+    text-align: right;
+  }
 
   .athlets-title,
   .players-title {
@@ -881,9 +885,10 @@ main {
     max-width: 740px;
     position: relative;
     right: calc(-50% + (31.283vw + 164px));
+    text-align: left;
   }
 
-  .players::after {
+    .players::after {
     width: calc(50vw + 150px);
     max-width: 991px;
     height: auto;
@@ -990,16 +995,15 @@ main {
     height: 155px;
     top: 211px;
     position: absolute;
+/*
     top: 0;
     right: 0;
     bottom: 0;
+*/
     left: 50%;
-
-
-
-
-
   }
+  
+  
 
   .list {
     left: -88px;
@@ -1075,4 +1079,15 @@ main {
     margin-bottom: 262px;
   }
 
+}
+
+
+@media (min-width: 1921px) {
+  .players-title,
+  .players .items,
+  .players .text,
+  .players .text-growth {
+    right: calc(-50% + 765px);
+  }
+  
 }
