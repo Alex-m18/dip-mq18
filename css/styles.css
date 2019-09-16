@@ -985,19 +985,6 @@ main {
     text-align: left;
   }
 
-/*
-  .be-active-title,
-  .work-it-title {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-*/
-
-/*  .find-contact-title {}*/
-
-
   .be-active-text,
   .find-contact-text,
   .work-it-text {
@@ -1015,7 +1002,7 @@ main {
     top: 0;
     right: 0;
     bottom: 0;
-/*    left: 50%;*/
+    left: 50%;
   }
   
   
@@ -1025,7 +1012,7 @@ main {
   }
 
   .find-contact-list {
-    left: 684px;
+    left: 704px;
   }
 
 
