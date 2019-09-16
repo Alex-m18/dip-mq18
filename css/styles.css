@@ -584,7 +584,7 @@ main {
   .players-connection,
   .players-collaboration,
   .players-growth {
-    text-align: left;
+    text-align: right;
     padding-right: calc(50% - 85px);
     padding-left: 20px;
   }
@@ -624,7 +624,7 @@ main {
   .players::after {
     width: calc(50vw + 50px);
     max-width: 436px;
-    
+
     height: auto;
     content: "";
     background-image: url("../images/basketballer_436.png");
@@ -873,16 +873,13 @@ main {
   }
 
   .players-title,
-  .players-connection,
-  .players-collaboration,
-  .players-growth {
-    padding-left: 15px;
-  }
-
   .players .items,
   .players .text,
   .players .text-growth {
-    max-width: 46vw;
+    max-width: 740px;
+    position: relative;
+    right: calc(-50% + 765px);
+    text-align: left;
   }
 
   .players::after {
@@ -924,9 +921,10 @@ main {
   .find-contact-pic,
   .work-it-pic {
     width: 960px;
+    height: 730px;
     position: absolute;
   }
-  
+
   .be-active-pic,
   .work-it-pic {
     top: 0;
@@ -935,29 +933,31 @@ main {
     left: inherit;
     margin-right: -240px;
   }
-    
-    .find-contact-pic {
-      top: 0;
+
+  .find-contact-pic {
+    top: 0;
     right: 0;
     bottom: 0;
     left: 50%;
-      margin-left: -240px;
-    }
- 
+    margin-left: -240px;
+  }
+
   .be-active-content,
   .find-contact-content,
   .work-it-content {
     width: 642px;
     text-align: left;
+    position: relative;
   }
 
   .be-active-content,
   .work-it-content {
-    padding: 260px 15px 0 130px;
+    height: 730px;
+    margin: 260px 15px 0 130px;
   }
 
   .find-contact-content {
-    padding: 260px 130px 0 15px;
+    margin: 260px 130px 0 15px;
   }
 
   .be-active-title,
@@ -966,7 +966,14 @@ main {
     font-size: 8rem;
     line-height: 60px;
     margin-bottom: 90px;
+    position: absolute;
   }
+
+  .be-active-title,
+  .work-it-title {}
+
+  .find-contact-title {}
+
 
   .be-active-text,
   .find-contact-text,
@@ -981,10 +988,16 @@ main {
     width: 168px;
     height: 155px;
     top: 211px;
-    
-    
-    
-    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+
+
+
+
+
   }
 
   .list {
